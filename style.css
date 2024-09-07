@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.header__name{
+    width: 100%;
+	background: black;
+    color: white;
+    text-align: center;
+    padding: 22.5px 0px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 30px;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    background-color: #95CBFD;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main__name{
+    background-color: #9F6EC5;
+    border-radius: 60px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 40px;
+    color: #02FF2A;
+    width: 400px;
+    height: 65px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 45px 13px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.main__text{
+    width: 400px;
+    height: 86px;
+    background-color: #9F6EC5;
+    border-radius: 60px;
+    padding: 45px 13px;
+    font-size: 25px;
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    color: #02FF2A;
+}
