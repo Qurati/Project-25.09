@@ -70,11 +70,15 @@
 }
 
 .main__speaker-info{
+    justify-content: center;
+    align-items: center;
     background-color: #9F6EC5;
-    border-radius: 60px;
-    width: 384px;
-    height: 166px;
-    padding-left: 80px;
+    border-radius: 100px;
+    width: 370px;
+    height: 180px;
+    padding-left: 140px;
+    margin-bottom: 50px;
+    
 }
 
 .main__speaker-name{
@@ -89,6 +93,7 @@
     padding: 2px 2px;
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .main__speaker-text{
@@ -98,5 +103,9 @@
     font-size: 30px;
     font-family: "Pixelify Sans", sans-serif;
     color: #02FF2A;
-    border: 1px solid;
+}
+
+.main__speaker-photo{
+    position: fixed;
+    margin-top: 465px;
 }
