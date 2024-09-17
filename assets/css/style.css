@@ -13,16 +13,23 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 2px solid rgb(255, 0, 0);
 }
 
 a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 /*#################################*/
-.header__title {
+.header {
   background: black;
-  width: 100%;
+}
+.header__title {
   height: 110px;
   font-size: 50px;
   color: white;
@@ -36,10 +43,12 @@ a {
 .main {
   background: #95CBFD;
   padding-top: 105px;
-  height: 2250px;
+  padding-bottom: 70px;
 }
-.main__title {
-  font-size: 65px;
+.main__blocks__title {
+  width: 1000px;
+  padding: 70px 30px;
+  font-size: 75px;
   font-family: "Press Start 2P";
   font-weight: 400;
   display: flex;
@@ -49,11 +58,12 @@ a {
   border-radius: 60px;
   margin: 0 130px;
   color: #02FF2A;
-  padding: 65px 0;
   box-shadow: 20px 15px 6px 0 rgba(0, 0, 0, 0.25);
   margin-bottom: 150px;
+  letter-spacing: 5px;
+  word-spacing: -27px;
 }
-.main__subtitle {
+.main__blocks__subtitle {
   width: 850px;
   font-size: 60px;
   font-weight: 400;
@@ -66,11 +76,13 @@ a {
   margin-right: 30px;
   margin-left: auto;
 }
-.main__speaker {
+.main__blocks__speaker {
   margin-left: 30px;
   position: relative;
+  margin-bottom: 95px;
 }
-.main__speaker__photo {
+.main__blocks__speaker__photo {
+  box-shadow: -20px 15px 6px 0 rgba(0, 0, 0, 0.25);
   position: absolute;
   display: block;
   height: 375px;
@@ -78,8 +90,8 @@ a {
   border-radius: 180px;
   margin-top: 100px;
 }
-.main__speaker__text {
-  position: absolute;
+.main__blocks__speaker__text {
+  box-shadow: -20px 15px 6px 0 rgba(0, 0, 0, 0.25);
   z-index: 1;
   width: 850px;
   margin-left: 125px;
@@ -87,7 +99,7 @@ a {
   border-radius: 60px;
   padding-top: 30px;
 }
-.main__speaker__text__title {
+.main__blocks__speaker__text__title {
   width: 600px;
   color: #F8FC3C;
   font-size: 65px;
@@ -97,9 +109,34 @@ a {
   padding: 30px 0 30px 70px;
   margin-left: 185px;
 }
-.main__speaker__text__subtitle {
+.main__blocks__speaker__text__subtitle {
   color: #02FF2A;
   font-size: 60px;
   font-family: "Pixelify Sans";
   padding: 0 18px 16px 242px;
+}
+.main__btn {
+  background: #18EF7B;
+  border-radius: 50px;
+  border: 2px solid black;
+  padding: 42px 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 535px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.main__btn a {
+  font-size: 60px;
+  font-family: "Pixelify Sans";
+  font-weight: 400;
+  color: #000000;
+}
+.main__btn a:hover {
+  color: #c7ec24;
+}
+.main__arrow {
+  display: flex;
+  justify-content: center;
 }
