@@ -80,8 +80,8 @@ a {
 }
 @media (max-width: 1000px) {
   .main__blocks__title {
-    width: 800px;
-    font-size: 65px;
+    width: 600px;
+    font-size: 55px;
   }
 }
 .main__blocks__subtitle {
@@ -96,6 +96,12 @@ a {
   margin-bottom: 150px;
   margin-right: 30px;
   margin-left: auto;
+}
+@media (max-width: 1000px) {
+  .main__blocks__subtitle {
+    width: 600px;
+    font-size: 45px;
+  }
 }
 .main__blocks__speaker {
   margin-left: 30px;
@@ -113,22 +119,28 @@ a {
 }
 @media (max-width: 1000px) {
   .main__blocks__speaker__photo {
-    height: 325px;
+    height: 275px;
   }
 }
 .main__blocks__speaker__text {
   box-shadow: -20px 15px 6px 0 rgba(0, 0, 0, 0.25);
   z-index: 1;
-  width: 750px;
+  width: 850px;
   margin-left: 125px;
   background: #9F6EC5;
   border-radius: 60px;
   padding-top: 30px;
 }
+@media (max-width: 1000px) {
+  .main__blocks__speaker__text {
+    margin-left: 100px;
+    width: 650px;
+  }
+}
 .main__blocks__speaker__text__title {
   width: 600px;
   color: #F8FC3C;
-  font-size: 65px;
+  font-size: 55px;
   font-family: "Press Start 2P";
   background: #C191E6;
   border-radius: 60px;
@@ -137,19 +149,21 @@ a {
 }
 @media (max-width: 1000px) {
   .main__blocks__speaker__text__title {
-    width: 500px;
+    width: 450px;
+    margin-left: 125px;
     font-size: 60px;
   }
 }
 .main__blocks__speaker__text__subtitle {
   color: #02FF2A;
-  font-size: 60px;
+  font-size: 45px;
   font-family: "Pixelify Sans";
   padding: 0 18px 16px 242px;
 }
 @media (max-width: 1000px) {
   .main__blocks__speaker__text__subtitle {
     font-size: 50px;
+    padding: 0 18px 16px 160px;
   }
 }
 .main__btn {
@@ -365,18 +379,18 @@ a {
 }
 .about__stars__star2 {
   top: -1700px;
-  left: 750px;
+  left: 650px;
 }
 .about__stars__star3 {
-  top: -900px;
-  left: 500px;
+  top: -1000px;
+  left: 300px;
 }
 .about__stars__star4 {
-  top: -1125px;
+  top: -1325px;
   right: 20px;
 }
 .about__stars__star5 {
-  top: -1225px;
+  top: -1325px;
   left: 400px;
 }
 
@@ -491,7 +505,7 @@ a {
   display: flex;
   text-align: center;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
 }
 .footer__text__first__title {
   margin-bottom: 10px;
@@ -506,7 +520,7 @@ a {
 .footer__text__first__subtitle {
   font-family: "colombo";
   margin-bottom: 25px;
-  font-size: 35px;
+  font-size: 30px;
   width: 530px;
 }
 @media (max-width: 1000px) {
@@ -522,7 +536,7 @@ a {
 }
 @media (max-width: 1000px) {
   .footer__text__second__subtitle {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 .footer__text__second__contact {
@@ -531,7 +545,7 @@ a {
 }
 @media (max-width: 1000px) {
   .footer__text__second__contact {
-    font-size: 26px;
+    font-size: 21px;
   }
 }
 .footer__text__title {
