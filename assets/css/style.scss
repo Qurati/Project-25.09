@@ -3,17 +3,22 @@
     font-family: "Press Start 2P";
     font-weight: 400;}
 
-    @font-face {
-        src: url(../fonts/PixelifySans-Regular.ttf);
-        font-family: "Pixelify Sans";
-        font-weight: 400;}
+@font-face {
+    src: url(../fonts/PixelifySans-Regular.ttf);
+    font-family: "Pixelify Sans";
+    font-weight: 400;}
+
+@font-face {
+    src: url(../fonts/postnobillscolombo-regular.ttf);
+    font-family: "colombo";
+    font-weight: 400;}
 /*#################################*/
 
 *, *::after, *::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 2px solid rgb(255, 0, 0);
+    /*border: 2px solid rgb(255, 0, 0);*/
 }
 
 a{
@@ -255,6 +260,7 @@ a{
                     font-size: 30px;
                     border-radius: 15px;
                     margin-bottom: 20px;
+                    padding-left: 20px;
                 }
                 &__btn{
                     position: relative;
@@ -339,6 +345,142 @@ a{
         &__star5{
             top: -1225px;
             left: 400px;
+        }
+    }
+}
+
+.rewievs{
+    background: #F9DAB6;
+    padding-top: 40px;
+    position: relative;
+    z-index: -2;
+    &__container{
+        position: relative;
+    }
+    &__flex{
+        display: flex;
+    }
+    &__title{
+        height: 205px;
+        text-transform: uppercase;
+        font-family: 'Press Start 2P';
+        font-size: 65px;
+        background: #F8EEB7;
+        border-radius: 90PX;
+        padding: 50px 60px;
+        margin-bottom: 75px;
+    }
+    &__blocks{
+        &-wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            gap: 160px;
+        }
+        &__block{
+            padding: 5px 10px;
+            background: #AB9999;
+            border-radius: 100px;
+            display: flex;
+            &__text{       
+                font-family: 'Pixelify Sans';
+                &__title{
+                    font-size: 60px;
+                    width: 500px;
+                    color: #fff;
+                    line-height: 50px;
+                    margin-bottom: 20px;
+                }
+                &__subtitle{
+                    padding: 10px 25px;
+                    font-size: 55px;
+                    line-height: 45px;
+                    width: 460px;
+                    background: #D9D9D9;
+                    border-radius: 60px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    &__arrow{
+        display: flex;
+        justify-content: end;
+        margin-right: 40px;
+        padding-bottom: 40px;
+    }
+    &__background{
+        &__ball{
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            right: 0;
+            border-right: 3px solid rgb(0, 0, 0);
+        }
+        &__star{
+            position: absolute;
+            z-index: -1;
+            top: 450px;
+            left: 150px;
+        }
+        &__polygon{
+            position: absolute;
+            z-index: -1;
+            top: 450px;
+            right: 0;
+        }
+    }
+}
+
+.footer{
+    
+    &__container{
+        position: relative;
+        border: 2px solid #000;
+        height: 246px;
+        background: #D9D9D9;
+    }
+    &__logo{
+        position: absolute;
+        right: 0;
+    }
+    &__text{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 300px;
+        &__first{
+            &__title{
+                margin-bottom: 10px;
+                font-family: 'colombo';
+                font-size: 50px;
+            }
+            &__subtitle{
+                font-family: 'colombo';
+                margin-bottom: 25px;
+                font-size: 35px;
+                width: 530px;
+            }
+        }
+        &__second{
+            &__subtitle{
+                color: #817C7C;
+                font-family: 'colombo';
+                font-size: 30px;
+            }
+            &__contact{
+                font-family: 'colombo';
+                font-size: 31px;
+            }
+        }
+        &__title{
+            position: absolute;
+            bottom: 0;
+            left: 550px;
+            color: #6F6A6A;
+            font-size: 25px;
+            font-family: 'colombo';
         }
     }
 }
