@@ -505,7 +505,17 @@ a {
   display: flex;
   text-align: center;
   align-items: center;
-  gap: 50px;
+  gap: 360px;
+}
+@media (max-width: 1000px) {
+  .footer__text {
+    gap: 150px;
+  }
+}
+@media (max-width: 900px) {
+  .footer__text {
+    gap: 50px;
+  }
 }
 .footer__text__first__title {
   margin-bottom: 10px;
@@ -521,7 +531,7 @@ a {
   font-family: "colombo";
   margin-bottom: 25px;
   font-size: 30px;
-  width: 530px;
+  width: 430px;
 }
 @media (max-width: 1000px) {
   .footer__text__first__subtitle {
@@ -551,7 +561,7 @@ a {
 .footer__text__title {
   position: absolute;
   bottom: 0;
-  left: 550px;
+  left: 520px;
   color: #6F6A6A;
   font-size: 25px;
   font-family: "colombo";
