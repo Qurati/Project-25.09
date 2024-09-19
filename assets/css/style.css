@@ -115,7 +115,7 @@ a {
   height: 375px;
   z-index: 2;
   border-radius: 180px;
-  margin-top: 100px;
+  margin-top: 75px;
 }
 @media (max-width: 1000px) {
   .main__blocks__speaker__photo {
@@ -125,7 +125,7 @@ a {
 .main__blocks__speaker__text {
   box-shadow: -20px 15px 6px 0 rgba(0, 0, 0, 0.25);
   z-index: 1;
-  width: 850px;
+  width: 750px;
   margin-left: 125px;
   background: #9F6EC5;
   border-radius: 60px;
@@ -138,9 +138,9 @@ a {
   }
 }
 .main__blocks__speaker__text__title {
-  width: 600px;
+  width: 500px;
   color: #F8FC3C;
-  font-size: 55px;
+  font-size: 60px;
   font-family: "Press Start 2P";
   background: #C191E6;
   border-radius: 60px;
@@ -156,7 +156,7 @@ a {
 }
 .main__blocks__speaker__text__subtitle {
   color: #02FF2A;
-  font-size: 45px;
+  font-size: 55px;
   font-family: "Pixelify Sans";
   padding: 0 18px 16px 242px;
 }
