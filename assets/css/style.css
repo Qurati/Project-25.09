@@ -10,7 +10,7 @@
   font-weight: 400;
 }
 /*#################################*/
-* {
+*, *::after, *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -22,8 +22,13 @@ a {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1500px;
   margin: 0 auto;
+}
+
+.star {
+  position: absolute;
+  z-index: -1;
 }
 
 /*#################################*/
@@ -44,7 +49,8 @@ a {
 .main {
   background: #95CBFD;
   padding-top: 105px;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
+  margin-bottom: 100px;
 }
 .main__test {
   display: none;
@@ -144,7 +150,7 @@ a {
   justify-content: center;
 }
 
-.modal {
+.modal-screen__modal {
   position: fixed; /* фиксированное положение */
   top: 0;
   right: 0;
@@ -158,66 +164,53 @@ a {
   margin: 0;
   padding: 0;
 }
-
-/* при отображении модального окно */
-.modal:target {
-  opacity: 1; /* делаем окно видимым */
-  pointer-events: auto; /* элемент видим для событий мыши */
-  overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
-}
-
-/* ширина модального окна и его отступы от экрана */
-.modal-dialog {
+.modal-screen__modal__dialog {
   position: relative;
   width: auto;
   margin: 10px;
 }
-
 @media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 500px;
+  .modal-screen__modal__dialog {
+    max-width: 1000px;
     margin: 0 auto;
-    top: 50%;
+    top: 15%;
   }
 }
-/* свойства для блока, содержащего контент модального окна */
-.modal-content {
+.modal-screen__modal__content {
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: #aaa5a5;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border-radius: 41px;
   outline: 0;
 }
-
 @media (min-width: 768px) {
-  .modal-content {
+  .modal-screen__modal__content {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
 }
-/* свойства для заголовка модального окна */
-.modal-header {
+.modal-screen__modal__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 15px;
 }
-
-.modal-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1.5;
-  font-size: 1.25rem;
-  font-weight: 500;
+.modal-screen__modal__title {
+  margin: 0 auto;
+  font-size: 75px;
+  font-weight: 400;
+  background: #D9D9D9 center center/cover;
+  padding: 25px 35px;
+  border-radius: 40px;
+  font-family: "Pixelify Sans";
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
-
-/* свойства для кнопки "Закрыть" */
-.close {
-  float: right;
+.modal-screen__modal__close {
+  position: absolute;
+  left: 87%;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 70px;
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -225,19 +218,112 @@ a {
   opacity: 0.5;
   text-decoration: none;
 }
-
-/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
-.close:focus, .close:hover {
+.modal-screen__modal__close:focus, .modal-screen__modal .close:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
   opacity: 0.75;
 }
-
-/* свойства для блока, содержащего основное содержимое окна */
-.modal-body {
+.modal-screen__modal__body {
+  max-width: 950px;
   position: relative;
-  flex: 1 1 auto;
-  padding: 15px;
   overflow: auto;
+  margin: 0 auto;
+}
+.modal-screen__modal__body__text {
+  background: #D9D9D9 center center/cover;
+  border-radius: 40px;
+  padding: 20px 20px;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Pixelify Sans";
+  margin-bottom: 50px;
+}
+.modal-screen__modal__body__form {
+  display: flex;
+  width: auto;
+  gap: 50px;
+}
+.modal-screen__modal__body__form__input {
+  display: block;
+  width: 80%;
+  height: 100px;
+  font-family: "Pixelify Sans";
+  font-size: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.modal-screen__modal__body__form__btn {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 90px;
+  background: #02FF2A;
+}
+.modal-screen__modal__body__form__btn__center {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 25px solid transparent;
+  border-left: 40px solid rgb(255, 255, 255);
+}
+.modal-screen__modal:target {
+  opacity: 1; /* делаем окно видимым */
+  pointer-events: auto; /* элемент видим для событий мыши */
+  overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+
+.about__title {
+  font-size: 70px;
+  font-family: "Press Start 2P";
+  margin-bottom: 130px;
+}
+.about__text {
+  position: relative;
+  font-family: "Pixelify Sans";
+  margin-bottom: 150px;
+}
+.about__text__arrow {
+  position: absolute;
+  top: 300px;
+  left: 165px;
+}
+.about__text__title {
+  margin-left: 200px;
+  max-width: 857px;
+  font-size: 60px;
+}
+.about__text__subtitle {
+  display: flex;
+  font-size: 50px;
+  margin: 150px 0 100px 220px;
+}
+.about__arrow__end {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 350px;
+}
+.about__stars {
+  position: relative;
+}
+.about__stars__star1 {
+  top: -550px;
+  left: 300px;
+}
+.about__stars__star2 {
+  top: -1700px;
+  left: 750px;
+}
+.about__stars__star3 {
+  top: -900px;
+  left: 500px;
+}
+.about__stars__star4 {
+  top: -1125px;
+  left: 830px;
+}
+.about__stars__star5 {
+  top: -1225px;
+  left: 400px;
 }
