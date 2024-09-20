@@ -94,7 +94,7 @@ a {
   .main__blocks__title {
     width: 400px;
     font-size: 35px;
-    margin: 0 35px;
+    margin: 0 auto;
     padding: 50px 30px;
     margin-bottom: 75px;
     word-spacing: 0px;
@@ -124,7 +124,7 @@ a {
   .main__blocks__subtitle {
     width: 400px;
     font-size: 30px;
-    margin: 0 50px;
+    margin: 0 auto;
     padding: 30px 15px;
     margin-bottom: 75px;
     word-spacing: 0px;
@@ -136,6 +136,11 @@ a {
   margin-left: 30px;
   position: relative;
   margin-bottom: 95px;
+}
+@media (max-width: 840px) {
+  .main__blocks__speaker {
+    margin-left: 25px;
+  }
 }
 .main__blocks__speaker__photo {
   box-shadow: -20px 15px 6px 0 rgba(0, 0, 0, 0.25);
@@ -309,6 +314,11 @@ a {
   margin-bottom: 50px;
   margin-top: 30px;
 }
+@media (max-width: 840px) {
+  .modal-screen__modal__title {
+    font-size: 45px;
+  }
+}
 .modal-screen__modal__close {
   position: absolute;
   left: 87%;
@@ -333,6 +343,11 @@ a {
   overflow: auto;
   margin: 0 auto;
 }
+@media (max-width: 840px) {
+  .modal-screen__modal__body {
+    max-width: 450px;
+  }
+}
 .modal-screen__modal__body__text {
   background: #D9D9D9 center center/cover;
   border-radius: 40px;
@@ -342,10 +357,20 @@ a {
   font-family: "Pixelify Sans";
   margin-bottom: 50px;
 }
+@media (max-width: 840px) {
+  .modal-screen__modal__body__text {
+    font-size: 30px;
+  }
+}
 .modal-screen__modal__body__form {
   display: flex;
   width: auto;
   gap: 50px;
+}
+@media (max-width: 840px) {
+  .modal-screen__modal__body__form {
+    gap: 25px;
+  }
 }
 .modal-screen__modal__body__form__input {
   display: block;
@@ -357,12 +382,24 @@ a {
   margin-bottom: 20px;
   padding-left: 20px;
 }
+@media (max-width: 840px) {
+  .modal-screen__modal__body__form__input {
+    height: 70px;
+    font-size: 17px;
+  }
+}
 .modal-screen__modal__body__form__btn {
   position: relative;
   height: 100px;
   width: 100px;
   border-radius: 90px;
   background: #02FF2A;
+}
+@media (max-width: 840px) {
+  .modal-screen__modal__body__form__btn {
+    height: 75px;
+    width: 75px;
+  }
 }
 .modal-screen__modal__body__form__btn__center {
   position: absolute;
@@ -371,6 +408,12 @@ a {
   transform: translate(-50%, -50%);
   border: 25px solid transparent;
   border-left: 40px solid rgb(255, 255, 255);
+}
+@media (max-width: 840px) {
+  .modal-screen__modal__body__form__btn__center {
+    border: 15px solid transparent;
+    border-left: 30px solid rgb(255, 255, 255);
+  }
 }
 .modal-screen__modal:target {
   opacity: 1; /* делаем окно видимым */
