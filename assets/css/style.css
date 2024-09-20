@@ -198,9 +198,9 @@ a {
 }
 @media (max-width: 510px) {
   .main__blocks__speaker__photo {
-    margin-top: 40px;
-    height: 150px;
-    width: 100px;
+    margin-top: 25px;
+    height: 110px;
+    width: 75px;
   }
 }
 .main__blocks__speaker__text {
@@ -228,6 +228,7 @@ a {
   .main__blocks__speaker__text {
     margin-left: 45px;
     width: 250px;
+    padding-top: 15px;
   }
 }
 .main__blocks__speaker__text__title {
