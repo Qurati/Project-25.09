@@ -710,9 +710,10 @@ a {
 }
 @media (max-width: 840px) {
   .rewievs__title {
-    padding-top: 25px;
-    height: 130px;
+    padding-top: 30px;
+    height: 100px;
     margin: 0 auto;
+    margin-bottom: 50px;
     font-size: 30px;
   }
 }
