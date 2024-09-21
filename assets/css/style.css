@@ -577,8 +577,8 @@ a {
 }
 @media (max-width: 1000px) {
   .about__text__arrow {
-    top: 385px;
-    left: 130px;
+    top: 450px;
+    left: 115px;
   }
 }
 @media (max-width: 840px) {
